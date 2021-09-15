@@ -14,7 +14,7 @@ namespace AutoCache.Example
             new Carro { Id = 4, Placa = "ddd4444" }
         };
 
-        [Cache(Seconds = 10)]
+        [Cache(Seconds = 15)]
         public async Task<Carro> Get(int id)
         {
             await Task.Delay(5000);

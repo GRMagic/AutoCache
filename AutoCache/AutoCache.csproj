@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <PackageId>rmdev.autocache</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <License>MIT</License>
     <Authors>Gustavo Rossi Müller</Authors>
     <PackageDescription>Injeta dependências usando um proxy para fazer cache</PackageDescription>

@@ -45,10 +45,16 @@ namespace AutoCache
             {
                 invocation.Proceed();
 
-                _cache.Set(chave, invocation.ReturnValue, new MemoryCacheEntryOptions
+                var options = new MemoryCacheEntryOptions()
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(cacheAttribute.Seconds)
-                });
+                    Priority = cacheAttribute.Priority
+                };
+                if (cacheAttribute.Seconds > 0)
+                    options.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(cacheAttribute.Seconds);
+                if (cacheAttribute.SlidingSeconds > 0)
+                    options.SlidingExpiration = TimeSpan.FromSeconds(cacheAttribute.SlidingSeconds);
+
+                _cache.Set(chave, invocation.ReturnValue, options);
             }
         }
     }

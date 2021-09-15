@@ -27,7 +27,6 @@ namespace AutoCache.Example
             stopwatch.Stop();
             Console.WriteLine($"Encontrado {carros.Count()} carros em {stopwatch.ElapsedTicks} ticks.");
 
-
             Console.WriteLine("Buscando todos novamente...");
             stopwatch.Restart();
             carros = await repository.GetAll();
@@ -35,32 +34,44 @@ namespace AutoCache.Example
             Console.WriteLine($"Encontrado {carros.Count()} carros em {stopwatch.ElapsedTicks} ticks.");
 
 
-            Console.WriteLine("Buscando o carro 1...");
-            stopwatch.Restart();
-            var carro = await repository.Get(1);
-            stopwatch.Stop();
-            Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
+            //Console.WriteLine("Buscando o carro 1...");
+            //stopwatch.Restart();
+            //var carro = await repository.Get(1);
+            //stopwatch.Stop();
+            //Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
 
 
-            Console.WriteLine("Buscando o carro 1 novamente...");
-            stopwatch.Restart();
-            carro = await repository.Get(1);
-            stopwatch.Stop();
-            Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
+            //Console.WriteLine("Buscando o carro 1 novamente...");
+            //stopwatch.Restart();
+            //carro = await repository.Get(1);
+            //stopwatch.Stop();
+            //Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
 
             
-            Console.WriteLine("Buscando o carro 2...");
-            stopwatch.Restart();
-            carro = await repository.Get(2);
-            stopwatch.Stop();
-            Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
+            //Console.WriteLine("Buscando o carro 2...");
+            //stopwatch.Restart();
+            //carro = await repository.Get(2);
+            //stopwatch.Stop();
+            //Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
 
 
-            Console.WriteLine("Buscando o carro 2 novamente...");
-            stopwatch.Restart();
-            carro = await repository.Get(2);
-            stopwatch.Stop();
-            Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
+            //Console.WriteLine("Buscando o carro 2 novamente...");
+            //stopwatch.Restart();
+            //carro = await repository.Get(2);
+            //stopwatch.Stop();
+            //Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
+
+
+            var rand = new Random((int)DateTime.Now.Ticks);
+            for(int i = 0; i < 100; i++)
+            {
+                var c = rand.Next(1, 5);
+                Console.Write($"Buscando o carro {c}... ");
+                stopwatch.Restart();
+                var carro = await repository.Get(c);
+                stopwatch.Stop();
+                Console.WriteLine($"Encontrado o carro {carro.Placa} em {stopwatch.ElapsedTicks} ticks.");
+            }
         }
     }
 }
