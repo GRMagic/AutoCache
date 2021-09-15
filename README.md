@@ -25,3 +25,5 @@ public class CarroRepository : ICarroRepository
         }
     }
 ```
+
+A partir desse ponto, você pode usar o ICarroRepository via injeção de dependecia normalmente. O que vai ser entrege a você é um proxy que faz o cache em memória de acordo com tempo que você informou no atributo Cache do método.
