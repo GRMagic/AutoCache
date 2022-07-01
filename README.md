@@ -1,6 +1,6 @@
 ## AutoCache
 
-O rvdev.autocache é um pacote que visa facilitar a implementação de cache em memória adicionando apenas um attribute no método que será cacheado.
+O rmdev.autocache é um pacote que visa facilitar a implementação de cache em memória adicionando apenas um attribute no método que será cacheado.
 
 ## Como usar
 #### Adicionar o pacote
