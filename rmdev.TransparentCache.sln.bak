@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCache.Example", "AutoCache.Example\AutoCache.Example.csproj", "{C2A63004-4FF2-4F01-911E-17EC9771A869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCache.Example", "rmdev.TransparentCache.Example\AutoCache.Example.csproj", "{C2A63004-4FF2-4F01-911E-17EC9771A869}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCache", "AutoCache\AutoCache.csproj", "{546FFD50-367D-45E5-B3F8-E48C0C00853C}"
 EndProject
