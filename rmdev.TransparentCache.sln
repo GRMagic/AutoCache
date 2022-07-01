@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31613.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCache.Example", "rmdev.TransparentCache.Example\AutoCache.Example.csproj", "{C2A63004-4FF2-4F01-911E-17EC9771A869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCache.Example", "rmdev.TransparentCache.Example\AutoCache.Example.csproj", "{C2A63004-4FF2-4F01-911E-17EC9771A869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCache", "AutoCache\AutoCache.csproj", "{546FFD50-367D-45E5-B3F8-E48C0C00853C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCache", "AutoCache\AutoCache.csproj", "{546FFD50-367D-45E5-B3F8-E48C0C00853C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCache.Tests", "AutoCache.Tests\AutoCache.Tests.csproj", "{488D051F-DAE5-454E-97AF-7F88E5D0277E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{546FFD50-367D-45E5-B3F8-E48C0C00853C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{546FFD50-367D-45E5-B3F8-E48C0C00853C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{546FFD50-367D-45E5-B3F8-E48C0C00853C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488D051F-DAE5-454E-97AF-7F88E5D0277E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488D051F-DAE5-454E-97AF-7F88E5D0277E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488D051F-DAE5-454E-97AF-7F88E5D0277E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488D051F-DAE5-454E-97AF-7F88E5D0277E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
